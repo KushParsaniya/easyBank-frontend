@@ -1,4 +1,4 @@
-import NavBar from "../components/NavBar";
+import NavBar from "./basic/NavBar";
 
 function HomeNavBar() {
     const navbarItems = {
