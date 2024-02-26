@@ -1,7 +1,7 @@
 function NavBar(props) {
     return (
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary p-2">
-            <a class="navbar-brand" href="/home">EasyBank</a>
+            <a class="navbar-brand" href={props.links.link0}>{props.items.item0}</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -9,20 +9,24 @@ function NavBar(props) {
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link text-dark" href="/home">{props.items.item1}</a>
+                        <a class="nav-link text-dark" href={props.links.link1}>{props.items.item1}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="/notices">{props.items.item2}</a>
+                        <a class="nav-link text-dark" href={props.links.link2}>{props.items.item2}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="/contact">{props.items.item3}</a>
+                        <a class="nav-link text-dark" href={props.links.link3}>{props.items.item3}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">{props.items.item4}</a>
+                        <a class="nav-link text-dark" href={props.links.link4}>{props.items.item4}</a>
                     </li>
                 </ul>
             </div>
-            <button class="btn text-dark btn-outline-success bg-warning my-2 my-sm-0" type="submit">{props.items.item5}</button>
+            <button class="btn text-dark btn-outline-success bg-warning my-2 my-sm-0">
+            <a href={props.links.link5}>
+                {props.items.item5}
+            </a>
+            </button>
         </nav>
     );
 }
